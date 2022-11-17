@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:menu_app/menu.dart';
 
 void main() {
   runApp(const MyApp());
@@ -6,8 +7,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,16 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Menu(),
-    );
-  }
-}
-
-class Menu extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(centerTitle: true, title: Text("MENU")),
+      home: Menu(), // calling the class to be run it
     );
   }
 }
